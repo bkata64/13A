@@ -11,11 +11,7 @@ body {
 	margin-top: 80px;
 }
 
-#bal, #kozep{
-	float: left;
-}
-
-#jobb{
+#bal, #kozep, #jobb{
 	float: left;
 }
 	
@@ -39,6 +35,10 @@ h1 {
 	font-size: 2.5em;
 }
 
+h2 {
+	text-align: center;	
+}
+
 li {
 	list-style-type: none;
 	font-size: 1.5em;
@@ -51,4 +51,13 @@ li {
 
 #jobb li:nth-child(odd) {	
 	text-align: right;
+}
+
+a {
+	text-decoration: none;
+	color: brown;
+}
+
+a:hover {
+	color: orange;
 }
