@@ -1,0 +1,54 @@
+body {
+	background-color: beige;
+	font-family: Arial, Helvetica, sans-serif;
+	font-variant: small-caps;
+	color: brown;
+}
+
+#bal, #jobb {
+	width: 23%;
+	height: 1100px;
+	margin-top: 80px;
+}
+
+#bal, #kozep{
+	float: left;
+}
+
+#jobb{
+	float: left;
+}
+	
+#kozep {	
+	width: 800px;
+	height: 1100px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#kep {
+	width: 700px;
+	height: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+	margin: 10px;
+	font-size: 2.5em;
+}
+
+li {
+	list-style-type: none;
+	font-size: 1.5em;
+	line-height: 4em;
+}
+
+#bal li:nth-child(even) {	
+	text-align: right;
+}
+
+#jobb li:nth-child(odd) {	
+	text-align: right;
+}
