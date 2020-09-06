@@ -5,34 +5,30 @@ body {
 	color: brown;
 }
 
-#bal, #jobb {
-	width: 23%;
+.bal, .jobb, .kozep {
+	width: 33%;
 	height: 1100px;
-	margin-top: 80px;
-}
-
-#bal, #kozep, #jobb{
+	margin-top: 20px;
 	float: left;
 }
-	
-#kozep {	
-	width: 800px;
-	height: 1100px;
-	margin-left: auto;
-	margin-right: auto;	
-}
 
-#kep {
-	width: 700px;
-	height: 700px;
+.kep img{
+	display: block;
+	width: 90%;	
 	margin-left: auto;
 	margin-right: auto;
 }
 
+ul {
+	padding: 0 20px 0 20px;
+}
+
 h1 {
 	text-align: center;
-	margin: 10px;
-	font-size: 2.5em;
+	margin: 10px;	
+	font-stretch: condensed;
+	font-size: 2.5em;	
+	padding: 30px 0;
 }
 
 h2 {
@@ -45,11 +41,11 @@ li {
 	line-height: 4em;
 }
 
-#bal li:nth-child(even) {	
+.bal li:nth-child(even) {	
 	text-align: right;
 }
 
-#jobb li:nth-child(odd) {	
+.jobb li:nth-child(odd) {	
 	text-align: right;
 }
 
