@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="HU">
+      <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />       
+        <link type="text/css" rel="stylesheet" href="css/sajatweblap.css">
+        
+        <title>Elek Lajos</title>
+      </head>
+      <body>
+        <header>
+          <div id="main">
+            <nav>
+                <ul>
+                  <li class="active"> <a href="#"> KEZDŐLAP</a></li>
+                  <li class="b"> <a href="#rolam"> RÓLAM</a></li>
+                  <li class="c"> <a href="#galeria"> GALÉRIA</a></li>
+                  <li class="d"> <a href="#kapcsolat"> KAPCSOLAT</a></li>
+                </ul>
+            </nav>
+          </div>
+          </header>
+            <div class="title">
+              <h1>ELEK LAJOS</h1>
+            </div>
+          </div>
+            <div class="button"> 
+                <a target="_blank" href="https://twitter.com/lalielek" class="btn">FACEBOOK</a>
+                <a target="_blank" href="https://www.instagram.com/lalielek/" class="btn">INSTAGRAM</a>
+                <a target="_blank" href="https://twitter.com/lalielek"class="btn">TWITTER</a>
+            </div>
+            <section id="rolam">
+              <div>
+                  <img src="hatterphotoshop.jpg">  
+              </div>  
+
+            </section>
+
+               <section class="galeria">
+    
+                <div class="image">
+                  <img src="image/foto1.jpg" />
+                 </div>
+                 <div class="képek">
+                  <img src="image/foto2.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto3.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto4.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto5.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto6.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto7.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto8.jpg" />
+                </div>
+                <div class="képek">
+                  <img src="image/foto9.jpg" />
+                </div>
+               </section>
+
+              <section class="kapcsolat">
+                <div class="kapcsolatforma">
+                  <form action="lalielek.html" method="post">
+                    <input type="Text" name=""  class="inputtext" value="First Name">
+                    <input type="Text" name="" class="inputtext" value="Last Name">
+                    <input type="Text" name="" class="inputtext" value="E-mail">
+                    <textarea cols="4" rows="6" class="input" >A te üzeneted...
+                      <input type="Button" name="" class="kuldesgomb" value="Küldés">
+
+                    </textarea>
+
+                  </form>
+
+
+                </div>
+
+
+              </section>
+
+            <script type="text/script.js" src="js/jquery-1.11.3.min.js"></script>
+          <script src="text/script.js">
+                  $(document).ready(function(){
+                    $('a').click(function(){
+                        //alert("i am click");
+                        var selected= $(this);
+                        $('a').removeClass('active');
+                        $(selected).addClass('active');
+                      });
+                      var $a = $('a'),
+                      $b = $('b'),
+                      $c = $('c'),
+                      $d = $('d'),
+                      $e = $('e'),
+                      $Kezdőlap = $('.Kezdőlap'),
+                      $Rólam = $('.Rólam');
+                      $Portfólió = $('.Portfólió');
+                      $Galéria = $('.Galéria');
+                      $Kapcsolat = $('.Kapcsolat');
+
+                      $a.click(function(){
+                        $Kezdőlap.fadeIn();
+                        $Rólam.fadeOut();
+                        $Galéria.fadeOut();
+                        $Kapcsolat.fadeOut();
+                      });
+                      $b.click(function(){
+                        $Rólam.fadeIn();
+                        $Kezdőlap.fadeOut();
+                        $Galéria.fadeOut();
+                        $Kapcsolat.fadeOut();
+                      });
+                      $c.click(function(){
+                        $Galéria.fadeIn();
+                        $Kezdőlap.fadeOut();
+                        $Rólam.fadeOut();
+                        $Kapcsolat.fadeOut();
+                      });
+                      $d.click(function(){
+                        $Kapcsolat.fadeIn();
+                        $Kezdőlap.fadeOut();
+                        $Galéria.fadeOut();
+                        $Rólam.fadeOut();
+                       
+                      });
+
+                  });
+          </script>
+            <script src="js/ScrollMagic.min.js"></script>
+            <script src="js/animation.gsap.min.js"></script>
+            <script src="js/TimelineLite.min.js"></script>
+            <script src="js/TweenMax.min.js"></script>
+            <script src="js/CSSPlugin.min.js"></script>
+            <script src="js/script.js"></script>
+      </body>
+</html>

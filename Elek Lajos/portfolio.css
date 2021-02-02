@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.portfolio{
+    position: absolute;
+    right: 0;
+    top: 10px;
+    color: white;
+    padding: 0 60px;
+    display: none;
+
+
+}
+
+.portfolio .képek{
+    width: 23%;
+    margin: 2%;
+    float: left;
+
+}
+
+.képek img{
+    width: 100%;
+
+}
